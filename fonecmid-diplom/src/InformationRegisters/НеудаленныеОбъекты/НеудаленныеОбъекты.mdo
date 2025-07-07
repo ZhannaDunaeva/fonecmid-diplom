@@ -14,7 +14,6 @@
     <key>ru</key>
     <value>Неудаленные объекты</value>
   </synonym>
-  <defaultListForm>InformationRegister.НеудаленныеОбъекты.Form.ФормаСписка</defaultListForm>
   <standardAttributes>
     <dataHistory>Use</dataHistory>
     <name>Active</name>

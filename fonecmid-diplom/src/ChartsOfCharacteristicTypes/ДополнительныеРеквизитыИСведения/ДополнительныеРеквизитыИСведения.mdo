@@ -426,7 +426,6 @@
       <key>ru</key>
       <value>Наименование  (дополнительный язык)</value>
     </synonym>
-    <comment>АПК:58</comment>
     <type>
       <types>String</types>
       <stringQualifiers>
@@ -440,7 +439,6 @@
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:StringValue">
       <value></value>
     </fillValue>
@@ -454,7 +452,6 @@
       <key>ru</key>
       <value>Наименование (дополнительный язык 2)</value>
     </synonym>
-    <comment>АПК:58</comment>
     <type>
       <types>String</types>
       <stringQualifiers>
@@ -468,7 +465,6 @@
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:StringValue">
       <value></value>
     </fillValue>
@@ -536,7 +532,6 @@
     <fillValue xsi:type="core:StringValue">
       <value></value>
     </fillValue>
-    <indexing>Index</indexing>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>

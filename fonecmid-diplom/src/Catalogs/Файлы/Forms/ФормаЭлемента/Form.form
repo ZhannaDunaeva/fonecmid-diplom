@@ -2701,6 +2701,7 @@
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
               <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
               <wrap>true</wrap>
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
@@ -2735,7 +2736,6 @@
             </contextMenu>
             <type>InputField</type>
             <editMode>EnterOnInput</editMode>
-            <autoCellHeight>true</autoCellHeight>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -2743,45 +2743,6 @@
               <width>10</width>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
-              <wrap>true</wrap>
-              <chooseType>true</chooseType>
-              <typeDomainEnabled>true</typeDomainEnabled>
-              <textEdit>true</textEdit>
-            </extInfo>
-          </items>
-          <items xsi:type="form:FormField">
-            <name>ЭлектронныеПодписиМашиночитаемаяДоверенность</name>
-            <id>315</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ЭлектронныеПодписи.МашиночитаемаяДоверенность</segments>
-            </dataPath>
-            <titleLocation>None</titleLocation>
-            <extendedTooltip>
-              <name>ЭлектронныеПодписиМашиночитаемаяДоверенностьРасширеннаяПодсказка</name>
-              <id>317</id>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <contextMenu>
-              <name>ЭлектронныеПодписиМашиночитаемаяДоверенностьКонтекстноеМеню</name>
-              <id>316</id>
-              <autoFill>true</autoFill>
-            </contextMenu>
-            <type>InputField</type>
-            <editMode>Enter</editMode>
-            <headerHorizontalAlign>Left</headerHorizontalAlign>
-            <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:InputFieldExtInfo">
-              <autoMaxWidth>true</autoMaxWidth>
               <wrap>true</wrap>
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
@@ -2853,38 +2814,6 @@
             <typeDomainEnabled>true</typeDomainEnabled>
             <textEdit>true</textEdit>
           </extInfo>
-        </items>
-        <items xsi:type="form:FormField">
-          <name>ЭлектронныеПодписиТребуетсяПроверка</name>
-          <id>306</id>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>ЭлектронныеПодписи.ТребуетсяПроверка</segments>
-          </dataPath>
-          <extendedTooltip>
-            <name>ЭлектронныеПодписиТребуетсяПроверкаРасширеннаяПодсказка</name>
-            <id>308</id>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <contextMenu>
-            <name>ЭлектронныеПодписиТребуетсяПроверкаКонтекстноеМеню</name>
-            <id>307</id>
-            <autoFill>true</autoFill>
-          </contextMenu>
-          <type>CheckBoxField</type>
-          <editMode>Enter</editMode>
-          <showInHeader>true</showInHeader>
-          <headerHorizontalAlign>Left</headerHorizontalAlign>
-          <showInFooter>true</showInFooter>
-          <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
         </items>
         <autoCommandBar>
           <name>ЭлектронныеПодписиКоманднаяПанель</name>
@@ -3069,38 +2998,6 @@
             <autoMaxHeight>true</autoMaxHeight>
             <placementArea>UserCmds</placementArea>
             <representationInContextMenu>Auto</representationInContextMenu>
-          </items>
-          <items xsi:type="form:Addition">
-            <title>
-              <key>ru</key>
-              <value>Поиск</value>
-            </title>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <name>СтрокаПоискаЭлектронныеПодписи</name>
-            <id>300</id>
-            <extendedTooltip>
-              <name>СтрокаПоискаЭлектронныеПодписиРасширеннаяПодсказка</name>
-              <id>302</id>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <contextMenu>
-              <name>СтрокаПоискаЭлектронныеПодписиКонтекстноеМеню</name>
-              <id>301</id>
-              <autoFill>true</autoFill>
-            </contextMenu>
-            <source>ЭлектронныеПодписи</source>
-            <extInfo xsi:type="form:SearchStringAdditionExtInfo">
-              <autoMaxWidth>true</autoMaxWidth>
-            </extInfo>
           </items>
           <horizontalAlign>Left</horizontalAlign>
         </autoCommandBar>
@@ -3376,38 +3273,6 @@
             <autoMaxHeight>true</autoMaxHeight>
             <placementArea>UserCmds</placementArea>
             <representationInContextMenu>Auto</representationInContextMenu>
-          </items>
-          <items xsi:type="form:Addition">
-            <title>
-              <key>ru</key>
-              <value>Поиск</value>
-            </title>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <name>СтрокаПоискаСертификатыШифрования</name>
-            <id>303</id>
-            <extendedTooltip>
-              <name>СтрокаПоискаСертификатыШифрованияРасширеннаяПодсказка</name>
-              <id>305</id>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <contextMenu>
-              <name>СтрокаПоискаСертификатыШифрованияКонтекстноеМеню</name>
-              <id>304</id>
-              <autoFill>true</autoFill>
-            </contextMenu>
-            <source>СертификатыШифрования</source>
-            <extInfo xsi:type="form:SearchStringAdditionExtInfo">
-              <autoMaxWidth>true</autoMaxWidth>
-            </extInfo>
           </items>
           <horizontalAlign>Left</horizontalAlign>
         </autoCommandBar>
@@ -3973,65 +3838,6 @@
         <common>true</common>
       </edit>
     </columns>
-    <columns>
-      <name>ТребуетсяПроверка</name>
-      <title>
-        <key>ru</key>
-        <value>Требуется проверка</value>
-      </title>
-      <id>19</id>
-      <valueType>
-        <types>Boolean</types>
-      </valueType>
-      <view>
-        <common>true</common>
-      </view>
-      <edit>
-        <common>true</common>
-      </edit>
-    </columns>
-    <columns>
-      <name>РезультатПроверкиПодписиПоМЧД</name>
-      <id>23</id>
-      <valueType>
-        <types>String</types>
-        <stringQualifiers/>
-      </valueType>
-      <view>
-        <common>true</common>
-      </view>
-      <edit>
-        <common>true</common>
-      </edit>
-    </columns>
-    <columns>
-      <name>МашиночитаемаяДоверенность</name>
-      <title>
-        <key>ru</key>
-        <value>Машиночитаемая доверенность</value>
-      </title>
-      <id>24</id>
-      <valueType/>
-      <view>
-        <common>true</common>
-      </view>
-      <edit>
-        <common>true</common>
-      </edit>
-    </columns>
-    <columns>
-      <name>МашиночитаемаяДоверенностьВерна</name>
-      <id>25</id>
-      <valueType>
-        <types>Boolean</types>
-      </valueType>
-      <view>
-        <common>true</common>
-      </view>
-      <edit>
-        <common>true</common>
-      </edit>
-    </columns>
   </attributes>
   <attributes>
     <name>СертификатыШифрования</name>
@@ -4246,17 +4052,6 @@
       <common>true</common>
     </edit>
   </attributes>
-  <attributes>
-    <name>ПараметрыСвойств</name>
-    <id>20</id>
-    <valueType/>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
   <formCommands>
     <name>СтандартнаяЗаписатьИЗакрыть</name>
     <title>
@@ -4387,7 +4182,7 @@
     <id>10</id>
     <toolTip>
       <key>ru</key>
-      <value>Сохранить файл на компьютер или другое устройство</value>
+      <value>Сохранить файл на диск или другое устройство</value>
     </toolTip>
     <use>
       <common>true</common>
@@ -4575,7 +4370,7 @@
     <id>16</id>
     <toolTip>
       <key>ru</key>
-      <value>Сохранить файл на компьютер или другое устройство вместе с электронной подписью</value>
+      <value>Сохранить файл на диск или другое устройство вместе с электронной подписью</value>
     </toolTip>
     <use>
       <common>true</common>
@@ -4591,12 +4386,12 @@
     <name>ОбновитьИзФайлаНаДиске</name>
     <title>
       <key>ru</key>
-      <value>Обновить из файла на компьютере...</value>
+      <value>Обновить из файла на диске...</value>
     </title>
     <id>17</id>
     <toolTip>
       <key>ru</key>
-      <value>Обновить из файла на компьютере или другого устройства</value>
+      <value>Обновить из файла на диске</value>
     </toolTip>
     <use>
       <common>true</common>

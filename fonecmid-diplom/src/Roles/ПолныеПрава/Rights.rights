@@ -1184,7 +1184,15 @@
 	<object>
 		<name>Constant.ИзвлекатьТекстыФайловНаСервере</name>
 		<right>
+			<name>Read</name>
+			<value>false</value>
+		</right>
+		<right>
 			<name>Update</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>View</name>
 			<value>false</value>
 		</right>
 		<right>
@@ -2413,37 +2421,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Constant.РегистрироватьПоказателиСерверныхОповещений</name>
-		<right>
-			<name>Update</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>UpdateDataHistory</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>UpdateDataHistorySettings</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>UpdateDataHistoryVersionComment</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>EditDataHistoryVersionComment</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>SwitchToDataHistoryVersion</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>InformationRegister.ОбщиеПоставляемыеМакетыПечати</name>
 		<right>
 			<name>Update</name>
@@ -2817,33 +2794,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Constant.ПорядокОбрабатываемыхДанных</name>
-		<right>
-			<name>Update</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>ViewDataHistory</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>EditDataHistoryVersionComment</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>SwitchToDataHistoryVersion</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>Constant.ДетализироватьОбновлениеИБВЖурналеРегистрации</name>
 		<right>
 			<name>Update</name>
@@ -2984,37 +2934,6 @@
 		</right>
 		<right>
 			<name>ViewDataHistory</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>EditDataHistoryVersionComment</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>SwitchToDataHistoryVersion</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Constant.ДоставлятьСерверныеОповещенияБезСистемыВзаимодействия</name>
-		<right>
-			<name>Update</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>UpdateDataHistory</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>UpdateDataHistorySettings</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>UpdateDataHistoryVersionComment</name>
 			<value>false</value>
 		</right>
 		<right>

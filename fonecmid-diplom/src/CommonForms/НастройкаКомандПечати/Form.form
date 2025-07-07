@@ -21,7 +21,7 @@
     </dataPath>
     <titleLocation>None</titleLocation>
     <items xsi:type="form:FormGroup">
-      <name>КомандыПечатиВидимостьПредставление</name>
+      <name>КомандыПечатиГруппа1</name>
       <id>32</id>
       <items xsi:type="form:FormField">
         <name>КомандыПечатиВидимость</name>
@@ -118,10 +118,10 @@
       </userVisible>
       <title>
         <key>ru</key>
-        <value>Видимость и представление</value>
+        <value>Команда Печати</value>
       </title>
       <extendedTooltip>
-        <name>КомандыПечатиВидимостьПредставлениеРасширеннаяПодсказка</name>
+        <name>КомандыПечатиГруппа1РасширеннаяПодсказка</name>
         <id>33</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
@@ -137,7 +137,7 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormGroup">
-      <name>КомандыПечатиГруппаКомментарий</name>
+      <name>КомандыПечатиГруппа2</name>
       <id>44</id>
       <items xsi:type="form:FormField">
         <name>КомандыПечатиКомментарий</name>
@@ -192,10 +192,10 @@
       </userVisible>
       <title>
         <key>ru</key>
-        <value>Комментарий</value>
+        <value>Команды печати группа 2</value>
       </title>
       <extendedTooltip>
-        <name>КомандыПечатиГруппаКомментарийРасширеннаяПодсказка</name>
+        <name>КомандыПечатиГруппа2РасширеннаяПодсказка</name>
         <id>45</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
@@ -431,7 +431,7 @@
       <representationInContextMenu>Auto</representationInContextMenu>
     </items>
     <items xsi:type="form:FormGroup">
-      <name>ФормаГруппаПрочее</name>
+      <name>ФормаГруппа1</name>
       <id>39</id>
       <items xsi:type="form:Button">
         <name>ФормаУстановитьНастройкиПоУмолчанию</name>
@@ -470,10 +470,10 @@
       </userVisible>
       <title>
         <key>ru</key>
-        <value>Прочее</value>
+        <value>Форма группа 1</value>
       </title>
       <extendedTooltip>
-        <name>ФормаГруппаПрочееРасширеннаяПодсказка</name>
+        <name>ФормаГруппа1РасширеннаяПодсказка</name>
         <id>40</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
@@ -483,38 +483,6 @@
         </extInfo>
       </extendedTooltip>
       <extInfo xsi:type="form:ButtonGroupExtInfo"/>
-    </items>
-    <items xsi:type="form:Addition">
-      <title>
-        <key>ru</key>
-        <value>Поиск</value>
-      </title>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <name>СтрокаПоиска</name>
-      <id>50</id>
-      <extendedTooltip>
-        <name>СтрокаПоискаРасширеннаяПодсказка</name>
-        <id>52</id>
-        <type>Label</type>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <contextMenu>
-        <name>СтрокаПоискаКонтекстноеМеню</name>
-        <id>51</id>
-        <autoFill>true</autoFill>
-      </contextMenu>
-      <source>КомандыПечати</source>
-      <extInfo xsi:type="form:SearchStringAdditionExtInfo">
-        <autoMaxWidth>true</autoMaxWidth>
-      </extInfo>
     </items>
     <horizontalAlign>Left</horizontalAlign>
     <autoFill>true</autoFill>

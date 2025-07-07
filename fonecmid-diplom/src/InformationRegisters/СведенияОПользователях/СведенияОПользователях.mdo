@@ -219,10 +219,10 @@
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
   <resources uuid="110eff8b-aeec-4ba5-b710-fefc1bd60284">
-    <name>УдалитьДатаНачалаИспользованияПароля</name>
+    <name>ДатаНачалаИспользованияПароля</name>
     <synonym>
       <key>ru</key>
-      <value>(не используется) Дата начала использования пароля</value>
+      <value>Дата начала использования пароля</value>
     </synonym>
     <type>
       <types>Date</types>
@@ -244,10 +244,10 @@
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
   <resources uuid="0a8a6bb9-8b6a-43cf-9d46-b18a8a9591d8">
-    <name>УдалитьИспользованныеПароли</name>
+    <name>ИспользованныеПароли</name>
     <synonym>
       <key>ru</key>
-      <value>(не используется) Использованные пароли</value>
+      <value>Использованные пароли</value>
     </synonym>
     <type>
       <types>ValueStorage</types>

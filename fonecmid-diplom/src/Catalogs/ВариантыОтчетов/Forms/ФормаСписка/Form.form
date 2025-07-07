@@ -376,7 +376,7 @@
       <representationInContextMenu>Auto</representationInContextMenu>
     </items>
     <items xsi:type="form:FormGroup">
-      <name>СписокГруппаПоиск</name>
+      <name>СписокГруппа1</name>
       <id>188</id>
       <items xsi:type="form:Button">
         <name>СписокНайти</name>
@@ -463,10 +463,10 @@
       </userVisible>
       <title>
         <key>ru</key>
-        <value>Поиск</value>
+        <value>Группа 1</value>
       </title>
       <extendedTooltip>
-        <name>СписокГруппаПоискРасширеннаяПодсказка</name>
+        <name>СписокГруппа1РасширеннаяПодсказка</name>
         <id>189</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
@@ -1045,42 +1045,6 @@
             <contextMenu>
               <name>АвторКонтекстноеМеню</name>
               <id>13</id>
-              <autoFill>true</autoFill>
-            </contextMenu>
-            <type>LabelField</type>
-            <editMode>Enter</editMode>
-            <showInHeader>true</showInHeader>
-            <headerHorizontalAlign>Left</headerHorizontalAlign>
-            <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:LabelFieldExtInfo">
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-            </extInfo>
-          </items>
-          <items xsi:type="form:FormField">
-            <name>Назначение</name>
-            <id>202</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>Список.Назначение</segments>
-            </dataPath>
-            <extendedTooltip>
-              <name>НазначениеРасширеннаяПодсказка</name>
-              <id>204</id>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <contextMenu>
-              <name>НазначениеКонтекстноеМеню</name>
-              <id>203</id>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>LabelField</type>
@@ -1855,6 +1819,11 @@
   </mobileDeviceCommandBarContent>
   <mobileDeviceCommandBarContent>
     <value xsi:type="core:StringValue">
+      <value>СписокГруппа1</value>
+    </value>
+  </mobileDeviceCommandBarContent>
+  <mobileDeviceCommandBarContent>
+    <value xsi:type="core:StringValue">
       <value>КомандыСписка</value>
     </value>
   </mobileDeviceCommandBarContent>
@@ -1944,7 +1913,6 @@
 	ВариантыОтчетовПереопределяемый.КлючВарианта,
 	ВариантыОтчетовПереопределяемый.ТипОтчета,
 	ВариантыОтчетовПереопределяемый.Автор,
-	ВариантыОтчетовПереопределяемый.Назначение,
 	ВЫБОР
 		КОГДА ПОДСТРОКА(ВариантыОтчетовПереопределяемый.Описание, 1, 1) &lt;> &quot;&quot;
 			ТОГДА ВЫРАЗИТЬ(ВариантыОтчетовПереопределяемый.Описание КАК СТРОКА(1000))
@@ -1974,19 +1942,10 @@
 ГДЕ
 	ВариантыОтчетовПереопределяемый.Отчет В (&amp;ДоступныеОтчеты)
 	И ВЫБОР
-			КОГДА &amp;ЕстьОтборПоВариантам
-				ТОГДА ВариантыОтчетовПереопределяемый.Ссылка В (&amp;ВариантыПользователя)
-			КОГДА НЕ ВариантыОтчетовПереопределяемый.ПредопределенныйВариант В (&amp;ОтключенныеВариантыПрограммы)
-				ТОГДА ИСТИНА
-			ИНАЧЕ ВариантыОтчетовПереопределяемый.Ссылка В
-					(ВЫБРАТЬ
-						РодителиПереопределяемый.Родитель
-					ИЗ
-						Справочник.ВариантыОтчетов КАК РодителиПереопределяемый
-					ГДЕ
-						РодителиПереопределяемый.Отчет В (&amp;ДоступныеОтчеты)
-						И НЕ РодителиПереопределяемый.Ссылка В (&amp;ВариантыПользователя))
-		КОНЕЦ</queryText>
+		КОГДА НЕ &amp;ЕстьОтборПоВариантам
+			ТОГДА НЕ ВариантыОтчетовПереопределяемый.ПредопределенныйВариант В (&amp;ОтключенныеВариантыПрограммы)
+		ИНАЧЕ ВариантыОтчетовПереопределяемый.Ссылка В (&amp;ВариантыПользователя)
+	КОНЕЦ</queryText>
       <mainTable>Catalog.ВариантыОтчетов</mainTable>
       <autoFillAvailableFields>true</autoFillAvailableFields>
       <customQuery>true</customQuery>

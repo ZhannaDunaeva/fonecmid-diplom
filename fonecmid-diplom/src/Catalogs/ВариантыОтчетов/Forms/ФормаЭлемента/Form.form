@@ -134,46 +134,6 @@
       <textEdit>true</textEdit>
     </extInfo>
   </items>
-  <items xsi:type="form:FormField">
-    <name>Назначение</name>
-    <id>315</id>
-    <visible>true</visible>
-    <enabled>true</enabled>
-    <userVisible>
-      <common>true</common>
-    </userVisible>
-    <dataPath xsi:type="form:DataPath">
-      <segments>Объект.Назначение</segments>
-    </dataPath>
-    <extendedTooltip>
-      <name>НазначениеРасширеннаяПодсказка</name>
-      <id>317</id>
-      <type>Label</type>
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <extInfo xsi:type="form:LabelDecorationExtInfo">
-        <horizontalAlign>Left</horizontalAlign>
-      </extInfo>
-    </extendedTooltip>
-    <contextMenu>
-      <name>НазначениеКонтекстноеМеню</name>
-      <id>316</id>
-      <autoFill>true</autoFill>
-    </contextMenu>
-    <type>InputField</type>
-    <editMode>Enter</editMode>
-    <showInHeader>true</showInHeader>
-    <headerHorizontalAlign>Left</headerHorizontalAlign>
-    <showInFooter>true</showInFooter>
-    <extInfo xsi:type="form:InputFieldExtInfo">
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <wrap>true</wrap>
-      <chooseType>true</chooseType>
-      <typeDomainEnabled>true</typeDomainEnabled>
-      <textEdit>true</textEdit>
-    </extInfo>
-  </items>
   <items xsi:type="form:FormGroup">
     <name>Страницы</name>
     <id>269</id>
@@ -223,19 +183,19 @@
             <choiceList>
               <presentation>
                 <key>ru</key>
-                <value>Автору</value>
+                <value>Только автору</value>
               </presentation>
               <value xsi:type="core:StringValue">
-                <value>Автору</value>
+                <value>ТолькоДляАвтора</value>
               </value>
             </choiceList>
             <choiceList>
               <presentation>
                 <key>ru</key>
-                <value>Всем</value>
+                <value>Указанным пользователям</value>
               </presentation>
               <value xsi:type="core:StringValue">
-                <value>Всем</value>
+                <value>УказаннымПользователям</value>
               </value>
             </choiceList>
           </extInfo>
@@ -273,7 +233,7 @@
         <id>275</id>
         <title>
           <key>ru</key>
-          <value>Показать в панелях отчетов пользователей (начальная настройка)</value>
+          <value>Пользователи варианта</value>
         </title>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -283,7 +243,7 @@
         <dataPath xsi:type="form:DataPath">
           <segments>ПользователиВарианта</segments>
         </dataPath>
-        <titleLocation>Top</titleLocation>
+        <titleLocation>None</titleLocation>
         <excludedCommands>Add</excludedCommands>
         <excludedCommands>Change</excludedCommands>
         <excludedCommands>Copy</excludedCommands>
@@ -518,34 +478,6 @@
             <placementArea>UserCmds</placementArea>
             <representationInContextMenu>Auto</representationInContextMenu>
             <locationInCommandBar>InCommandBarAndInAdditionalSubmenu</locationInCommandBar>
-          </items>
-          <items xsi:type="form:Addition">
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <name>СтрокаПоиска</name>
-            <id>309</id>
-            <extendedTooltip>
-              <name>СтрокаПоискаРасширеннаяПодсказка</name>
-              <id>311</id>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <contextMenu>
-              <name>СтрокаПоискаКонтекстноеМеню</name>
-              <id>310</id>
-              <autoFill>true</autoFill>
-            </contextMenu>
-            <source>ПользователиВарианта</source>
-            <extInfo xsi:type="form:SearchStringAdditionExtInfo">
-              <autoMaxWidth>true</autoMaxWidth>
-            </extInfo>
           </items>
           <horizontalAlign>Left</horizontalAlign>
         </autoCommandBar>
@@ -926,34 +858,6 @@
         <autoCommandBar>
           <name>ДеревоПодсистемКоманднаяПанель</name>
           <id>82</id>
-          <items xsi:type="form:Addition">
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <name>СтрокаПоискаРазделов</name>
-            <id>312</id>
-            <extendedTooltip>
-              <name>СтрокаПоискаРазделовРасширеннаяПодсказка</name>
-              <id>314</id>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <contextMenu>
-              <name>СтрокаПоискаРазделовКонтекстноеМеню</name>
-              <id>313</id>
-              <autoFill>true</autoFill>
-            </contextMenu>
-            <source>ДеревоПодсистем</source>
-            <extInfo xsi:type="form:SearchStringAdditionExtInfo">
-              <autoMaxWidth>true</autoMaxWidth>
-            </extInfo>
-          </items>
           <horizontalAlign>Left</horizontalAlign>
         </autoCommandBar>
         <searchStringAddition>

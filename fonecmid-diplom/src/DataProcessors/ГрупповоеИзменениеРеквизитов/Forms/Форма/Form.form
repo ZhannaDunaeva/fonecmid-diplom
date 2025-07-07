@@ -136,111 +136,25 @@
           <currentRowUse>Auto</currentRowUse>
         </extInfo>
       </items>
-      <items xsi:type="form:FormGroup">
-        <name>ГруппаТипОперации</name>
-        <id>355</id>
-        <items xsi:type="form:FormField">
-          <name>ТипОперации</name>
-          <id>268</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>Объект.ТипОперации</segments>
-          </dataPath>
-          <titleLocation>None</titleLocation>
-          <handlers>
-            <event>OnChange</event>
-            <name>ВидОперацииПриИзменении</name>
-          </handlers>
-          <extendedTooltip>
-            <name>ТипОперацииРасширеннаяПодсказка</name>
-            <id>270</id>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <contextMenu>
-            <name>ТипОперацииКонтекстноеМеню</name>
-            <id>269</id>
-            <autoFill>true</autoFill>
-          </contextMenu>
-          <type>RadioButtonField</type>
-          <editMode>Enter</editMode>
-          <showInHeader>true</showInHeader>
-          <headerHorizontalAlign>Left</headerHorizontalAlign>
-          <showInFooter>true</showInFooter>
-          <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
-            <radioButtonsType>Tumbler</radioButtonsType>
-            <choiceList>
-              <presentation>
-                <key>ru</key>
-                <value>Ввести новые значения</value>
-              </presentation>
-              <value xsi:type="core:StringValue">
-                <value>ВвестиЗначения</value>
-              </value>
-            </choiceList>
-            <choiceList>
-              <presentation>
-                <key>ru</key>
-                <value>Выполнить произвольный алгоритм</value>
-              </presentation>
-              <value xsi:type="core:StringValue">
-                <value>ВыполнитьАлгоритм</value>
-              </value>
-            </choiceList>
-          </extInfo>
-        </items>
-        <items xsi:type="form:Addition">
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <name>РеквизитыСтрокаПоиска</name>
-          <id>357</id>
-          <extendedTooltip>
-            <name>РеквизитыСтрокаПоискаРасширеннаяПодсказка</name>
-            <id>359</id>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <contextMenu>
-            <name>РеквизитыСтрокаПоискаКонтекстноеМеню</name>
-            <id>358</id>
-            <autoFill>true</autoFill>
-          </contextMenu>
-          <source>РеквизитыОбъекта</source>
-          <groupHorizontalAlign>Right</groupHorizontalAlign>
-          <extInfo xsi:type="form:SearchStringAdditionExtInfo">
-            <width>30</width>
-            <autoMaxWidth>true</autoMaxWidth>
-            <horizontalStretch>false</horizontalStretch>
-          </extInfo>
-        </items>
+      <items xsi:type="form:FormField">
+        <name>ТипОперации</name>
+        <id>268</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
           <common>true</common>
         </userVisible>
-        <title>
-          <key>ru</key>
-          <value>Группа тип операции</value>
-        </title>
-        <horizontalStretch>true</horizontalStretch>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Объект.ТипОперации</segments>
+        </dataPath>
+        <titleLocation>None</titleLocation>
+        <handlers>
+          <event>OnChange</event>
+          <name>ВидОперацииПриИзменении</name>
+        </handlers>
         <extendedTooltip>
-          <name>ГруппаТипОперацииРасширеннаяПодсказка</name>
-          <id>356</id>
+          <name>ТипОперацииРасширеннаяПодсказка</name>
+          <id>270</id>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -248,14 +162,36 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
-        <type>UsualGroup</type>
-        <extInfo xsi:type="form:UsualGroupExtInfo">
-          <group>HorizontalIfPossible</group>
-          <behavior>Auto</behavior>
-          <showLeftMargin>true</showLeftMargin>
-          <united>true</united>
-          <throughAlign>Auto</throughAlign>
-          <currentRowUse>Auto</currentRowUse>
+        <contextMenu>
+          <name>ТипОперацииКонтекстноеМеню</name>
+          <id>269</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>RadioButtonField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+          <radioButtonsType>Tumbler</radioButtonsType>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Ввести новые значения</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ВвестиЗначения</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Выполнить произвольный алгоритм</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ВыполнитьАлгоритм</value>
+            </value>
+          </choiceList>
         </extInfo>
       </items>
       <items xsi:type="form:FormGroup">
@@ -693,10 +629,6 @@
             </extendedTooltip>
             <type>Pages</type>
             <extInfo xsi:type="form:PagesGroupExtInfo">
-              <handlers>
-                <event>OnCurrentPageChange</event>
-                <name>СоставОбъектаПриСменеСтраницы</name>
-              </handlers>
               <pagesRepresentation>TabsOnTop</pagesRepresentation>
               <currentRowUse>Auto</currentRowUse>
             </extInfo>
@@ -891,37 +823,6 @@
                       <horizontalAlign>Left</horizontalAlign>
                     </extInfo>
                   </items>
-                  <items xsi:type="form:Addition">
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
-                    <name>РеквизитыАлгоритмСтрокаПоиска</name>
-                    <id>352</id>
-                    <extendedTooltip>
-                      <name>РеквизитыАлгоритмСтрокаПоискаРасширеннаяПодсказка</name>
-                      <id>354</id>
-                      <type>Label</type>
-                      <autoMaxWidth>true</autoMaxWidth>
-                      <autoMaxHeight>true</autoMaxHeight>
-                      <extInfo xsi:type="form:LabelDecorationExtInfo">
-                        <horizontalAlign>Left</horizontalAlign>
-                      </extInfo>
-                    </extendedTooltip>
-                    <contextMenu>
-                      <name>РеквизитыАлгоритмСтрокаПоискаКонтекстноеМеню</name>
-                      <id>353</id>
-                      <autoFill>true</autoFill>
-                    </contextMenu>
-                    <source>РеквизитыОбъектаАлгоритм</source>
-                    <groupHorizontalAlign>Right</groupHorizontalAlign>
-                    <extInfo xsi:type="form:SearchStringAdditionExtInfo">
-                      <width>20</width>
-                      <autoMaxWidth>true</autoMaxWidth>
-                      <horizontalStretch>false</horizontalStretch>
-                    </extInfo>
-                  </items>
                   <visible>true</visible>
                   <enabled>true</enabled>
                   <userVisible>
@@ -931,7 +832,6 @@
                     <key>ru</key>
                     <value>Реквизиты:</value>
                   </title>
-                  <horizontalStretch>true</horizontalStretch>
                   <verticalStretch>true</verticalStretch>
                   <extendedTooltip>
                     <name>СтраницаСНадписьюРеквизитыРасширеннаяПодсказка</name>
@@ -945,7 +845,7 @@
                   </extendedTooltip>
                   <type>Page</type>
                   <extInfo xsi:type="form:PageGroupExtInfo">
-                    <group>HorizontalIfPossible</group>
+                    <group>Vertical</group>
                     <verticalAlign>Center</verticalAlign>
                     <showTitle>true</showTitle>
                   </extInfo>
@@ -1316,18 +1216,13 @@
                 <id>344</id>
                 <autoFill>true</autoFill>
               </contextMenu>
-              <type>InputField</type>
+              <type>RadioButtonField</type>
               <editMode>Enter</editMode>
               <showInHeader>true</showInHeader>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
-              <extInfo xsi:type="form:InputFieldExtInfo">
-                <maxWidth>20</maxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <wrap>true</wrap>
-                <listChoiceMode>true</listChoiceMode>
-                <chooseType>true</chooseType>
-                <typeDomainEnabled>true</typeDomainEnabled>
+              <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+                <columnsCount>2</columnsCount>
                 <choiceList>
                   <presentation>
                     <key>ru</key>
@@ -1380,18 +1275,13 @@
                 <id>347</id>
                 <autoFill>true</autoFill>
               </contextMenu>
-              <type>InputField</type>
+              <type>RadioButtonField</type>
               <editMode>Enter</editMode>
               <showInHeader>true</showInHeader>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
-              <extInfo xsi:type="form:InputFieldExtInfo">
-                <maxWidth>12</maxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <wrap>true</wrap>
-                <listChoiceMode>true</listChoiceMode>
-                <chooseType>true</chooseType>
-                <typeDomainEnabled>true</typeDomainEnabled>
+              <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+                <columnsCount>2</columnsCount>
                 <choiceList>
                   <presentation>
                     <key>ru</key>
@@ -2567,10 +2457,6 @@
     <name>ОбработкаВыбора</name>
   </handlers>
   <handlers>
-    <event>OnOpen</event>
-    <name>ПриОткрытии</name>
-  </handlers>
-  <handlers>
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
   </handlers>
@@ -2602,6 +2488,70 @@
       <segments>Объект.ПрерыватьПриОшибке</segments>
     </settingsSavedData>
     <main>true</main>
+  </attributes>
+  <attributes>
+    <name>ТОНастройкаПорции</name>
+    <id>3</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ТОЧислоОбъектовВПорции</name>
+    <id>5</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ТОПроцентОбъектовВПорции</name>
+    <id>4</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ЕстьФормаРазблокированияРеквизитов</name>
+    <id>6</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
   </attributes>
   <attributes>
     <name>ПолноеИмяФормыРаботыСБлокируемымиРеквизитами</name>
@@ -3325,37 +3275,6 @@
     <extInfo xsi:type="form:ValueListExtInfo">
       <itemValueType/>
     </extInfo>
-  </attributes>
-  <attributes>
-    <name>ПутьКФайлуВнешнейОбработкиНаКлиенте</name>
-    <id>3</id>
-    <valueType>
-      <types>String</types>
-      <stringQualifiers/>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>ЧислоОбъектовВПорции</name>
-    <id>5</id>
-    <valueType>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>5</precision>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
   </attributes>
   <formCommands>
     <name>Назад</name>

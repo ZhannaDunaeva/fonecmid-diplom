@@ -352,38 +352,6 @@
               <commandSource>Item.Пользователи</commandSource>
             </extInfo>
           </items>
-          <items xsi:type="form:Addition">
-            <title>
-              <key>ru</key>
-              <value>Поиск</value>
-            </title>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <name>ПользователиСтрокаПоиск</name>
-            <id>451</id>
-            <extendedTooltip>
-              <name>ПользователиСтрокаПоискРасширеннаяПодсказка</name>
-              <id>453</id>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <contextMenu>
-              <name>ПользователиСтрокаПоискКонтекстноеМеню</name>
-              <id>452</id>
-              <autoFill>true</autoFill>
-            </contextMenu>
-            <source>Пользователи</source>
-            <extInfo xsi:type="form:SearchStringAdditionExtInfo">
-              <autoMaxWidth>true</autoMaxWidth>
-            </extInfo>
-          </items>
           <horizontalAlign>Left</horizontalAlign>
         </autoCommandBar>
         <handlers>
@@ -1992,7 +1960,7 @@
       <valueType>
         <types>Number</types>
         <numberQualifiers>
-          <precision>2</precision>
+          <precision>1</precision>
         </numberQualifiers>
       </valueType>
       <view>

@@ -584,7 +584,7 @@
               </extendedTooltip>
               <type>UsualButton</type>
               <commandName>Form.Command.Очистить</commandName>
-              <representation>PictureAndText</representation>
+              <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
@@ -700,32 +700,6 @@
           <extInfo xsi:type="form:PagesGroupExtInfo">
             <currentRowUse>Auto</currentRowUse>
           </extInfo>
-        </items>
-        <items xsi:type="form:Button">
-          <name>ОбновитьСведения</name>
-          <id>151</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <extendedTooltip>
-            <name>ОбновитьСведенияРасширеннаяПодсказка</name>
-            <id>152</id>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <type>UsualButton</type>
-          <commandName>Form.Command.ОбновитьСведения</commandName>
-          <representation>Auto</representation>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <placementArea>UserCmds</placementArea>
-          <representationInContextMenu>Auto</representationInContextMenu>
         </items>
         <items xsi:type="form:FormGroup">
           <name>ИнформацияОРазмереФайлов</name>
@@ -1117,7 +1091,7 @@
     <type>UsualGroup</type>
     <extInfo xsi:type="form:UsualGroupExtInfo">
       <group>Vertical</group>
-      <representation>NormalSeparation</representation>
+      <representation>WeakSeparation</representation>
       <showLeftMargin>true</showLeftMargin>
       <united>true</united>
       <throughAlign>Auto</throughAlign>
@@ -1459,38 +1433,6 @@
       <placementArea>UserCmds</placementArea>
       <representationInContextMenu>Auto</representationInContextMenu>
       <locationInCommandBar>InCommandBarAndInAdditionalSubmenu</locationInCommandBar>
-    </items>
-    <items xsi:type="form:Addition">
-      <title>
-        <key>ru</key>
-        <value>Поиск</value>
-      </title>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <name>СтрокаПоиска</name>
-      <id>153</id>
-      <extendedTooltip>
-        <name>СтрокаПоискаРасширеннаяПодсказка</name>
-        <id>155</id>
-        <type>Label</type>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <contextMenu>
-        <name>СтрокаПоискаКонтекстноеМеню</name>
-        <id>154</id>
-        <autoFill>true</autoFill>
-      </contextMenu>
-      <source>ДеревоОбъектовМетаданных</source>
-      <extInfo xsi:type="form:SearchStringAdditionExtInfo">
-        <autoMaxWidth>true</autoMaxWidth>
-      </extInfo>
     </items>
     <horizontalAlign>Left</horizontalAlign>
     <autoFill>true</autoFill>
@@ -1979,14 +1921,11 @@
     <id>9</id>
     <toolTip>
       <key>ru</key>
-      <value>Очистить ненужные файлы</value>
+      <value>Очистить</value>
     </toolTip>
     <use>
       <common>true</common>
     </use>
-    <picture xsi:type="core:PictureRef">
-      <picture>StdPicture.Delete</picture>
-    </picture>
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
         <name>Очистить</name>
@@ -2045,7 +1984,7 @@
     <id>12</id>
     <toolTip>
       <key>ru</key>
-      <value>Файлы, которых не существует в программе, но имеются в томе в сетевом каталоге</value>
+      <value>Файлы, которых не существует в программе, но имеются в томе на диске</value>
     </toolTip>
     <use>
       <common>true</common>
@@ -2076,31 +2015,6 @@
         <name>ПерейтиКСписку</name>
       </handler>
     </action>
-    <currentRowUse>Auto</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>ОбновитьСведения</name>
-    <title>
-      <key>ru</key>
-      <value>Обновить</value>
-    </title>
-    <id>14</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Обновить сведения об удаляемых файлах</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <picture xsi:type="core:PictureRef">
-      <picture>StdPicture.Refresh</picture>
-    </picture>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>ОбновитьСведения</name>
-      </handler>
-    </action>
-    <representation>Picture</representation>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <commandInterface>

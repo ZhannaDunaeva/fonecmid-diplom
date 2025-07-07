@@ -175,7 +175,7 @@
     <rowPictureDataPath xsi:type="form:DataPath">
       <segments>СписокКодировок.Picture</segments>
     </rowPictureDataPath>
-    <searchStringLocation>Top</searchStringLocation>
+    <searchStringLocation>None</searchStringLocation>
     <viewStatusLocation>None</viewStatusLocation>
     <searchControlLocation>None</searchControlLocation>
   </items>

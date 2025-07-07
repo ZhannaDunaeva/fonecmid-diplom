@@ -16,8 +16,6 @@
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <editType>InDialog</editType>
-  <defaultRecordForm>InformationRegister.ДлительныеОперации.Form.ФормаЗаписи</defaultRecordForm>
-  <defaultListForm>InformationRegister.ДлительныеОперации.Form.ФормаСписка</defaultListForm>
   <standardAttributes>
     <dataHistory>Use</dataHistory>
     <name>Active</name>
@@ -90,23 +88,6 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="663cf316-3077-4fac-b821-94bd5cdde65c">
-    <name>ИдентификаторЗадания</name>
-    <synonym>
-      <key>ru</key>
-      <value>Идентификатор задания</value>
-    </synonym>
-    <type>
-      <types>UUID</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Идентификатор фонового задания (всегда первый для управляющего потока без учета перезапусков, для исполняющего потока последний с учетом перезапусков)</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </attributes>
   <attributes uuid="4b37d2c0-4181-4c47-951c-987017972bf7">
     <name>ИмяМетода</name>
     <synonym>
@@ -151,6 +132,22 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="a5ff3d28-847f-4512-afde-6bbad7f46f0e">
+    <name>ИдентификаторПроцесса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор процесса</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <attributes uuid="9ef01e37-030a-44b7-824b-110e0f5a88f3">
     <name>КлючПотока</name>
     <synonym>
@@ -160,11 +157,6 @@
     <type>
       <types>ValueStorage</types>
     </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Идентификатор порции данных (для исполняющего потока)
-Идентификатор последнего фонового задания после перезапуска (для управляющего потока)</value>
-    </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
@@ -185,6 +177,19 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="663cf316-3077-4fac-b821-94bd5cdde65c">
+    <name>ИдентификаторЗадания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор задания</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
   <attributes uuid="c15f648b-3aed-4734-bcd2-524e2d3336c0">
@@ -364,13 +369,8 @@
     <type>
       <types>UUID</types>
     </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Уникальный идентификатор исполняющего потока многопоточной операции (пустой для управляющего потока)</value>
-    </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
     <mainFilter>true</mainFilter>

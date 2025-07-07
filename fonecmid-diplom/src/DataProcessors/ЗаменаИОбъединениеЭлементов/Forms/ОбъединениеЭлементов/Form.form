@@ -323,10 +323,6 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <title>
-            <key>ru</key>
-            <value>Сортировать</value>
-          </title>
           <extendedTooltip>
             <name>ГруппаСортироватьРасширеннаяПодсказка</name>
             <id>242</id>
@@ -440,38 +436,6 @@
             </extInfo>
           </extendedTooltip>
           <extInfo xsi:type="form:ButtonGroupExtInfo"/>
-        </items>
-        <items xsi:type="form:Addition">
-          <title>
-            <key>ru</key>
-            <value>Поиск</value>
-          </title>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <name>СтрокаПоискаМестаИспользования</name>
-          <id>246</id>
-          <extendedTooltip>
-            <name>СтрокаПоискаМестаИспользованияРасширеннаяПодсказка</name>
-            <id>248</id>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <contextMenu>
-            <name>СтрокаПоискаМестаИспользованияКонтекстноеМеню</name>
-            <id>247</id>
-            <autoFill>true</autoFill>
-          </contextMenu>
-          <source>МестаИспользования</source>
-          <extInfo xsi:type="form:SearchStringAdditionExtInfo">
-            <autoMaxWidth>true</autoMaxWidth>
-          </extInfo>
         </items>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -905,7 +869,7 @@
           <name>МестаИспользованияКонтекстноеМеню</name>
           <id>2</id>
           <items xsi:type="form:FormGroup">
-            <name>МестаИспользованияКонтекстноеМенюГруппаОсновное</name>
+            <name>МестаИспользованияКонтекстноеМенюГруппа1</name>
             <id>158</id>
             <items xsi:type="form:Button">
               <name>МестаИспользованияКонтекстноеМенюУстановитьОсновным</name>
@@ -989,10 +953,10 @@
             </userVisible>
             <title>
               <key>ru</key>
-              <value>Основное</value>
+              <value>Места использования контекстное меню группа 1</value>
             </title>
             <extendedTooltip>
-              <name>МестаИспользованияКонтекстноеМенюГруппаОсновноеРасширеннаяПодсказка</name>
+              <name>МестаИспользованияКонтекстноеМенюГруппа1РасширеннаяПодсказка</name>
               <id>159</id>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
@@ -1079,7 +1043,7 @@
             <representationInContextMenu>Auto</representationInContextMenu>
           </items>
           <items xsi:type="form:FormGroup">
-            <name>МестаИспользованияКонтекстноеМенюГруппаСортировка</name>
+            <name>МестаИспользованияКонтекстноеМенюГруппа2</name>
             <id>222</id>
             <items xsi:type="form:Button">
               <name>МестаИспользованияКонтекстноеМенюСортироватьСписокПоВозрастанию</name>
@@ -1138,10 +1102,10 @@
             </userVisible>
             <title>
               <key>ru</key>
-              <value>Сортировка</value>
+              <value>Места использования контекстное меню группа 2</value>
             </title>
             <extendedTooltip>
-              <name>МестаИспользованияКонтекстноеМенюГруппаСортировкаРасширеннаяПодсказка</name>
+              <name>МестаИспользованияКонтекстноеМенюГруппа2РасширеннаяПодсказка</name>
               <id>223</id>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
@@ -1683,38 +1647,6 @@
           </extendedTooltip>
           <extInfo xsi:type="form:ButtonGroupExtInfo"/>
         </items>
-        <items xsi:type="form:Addition">
-          <title>
-            <key>ru</key>
-            <value>Поиск</value>
-          </title>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <name>СтрокаПоискаНеудачныеЗамены</name>
-          <id>243</id>
-          <extendedTooltip>
-            <name>СтрокаПоискаНеудачныеЗаменыРасширеннаяПодсказка</name>
-            <id>245</id>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <contextMenu>
-            <name>СтрокаПоискаНеудачныеЗаменыКонтекстноеМеню</name>
-            <id>244</id>
-            <autoFill>true</autoFill>
-          </contextMenu>
-          <source>НеудачныеЗамены</source>
-          <extInfo xsi:type="form:SearchStringAdditionExtInfo">
-            <autoMaxWidth>true</autoMaxWidth>
-          </extInfo>
-        </items>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -1759,7 +1691,7 @@
           <name>НеудачныеЗаменыДанныеКод</name>
           <id>150</id>
           <items xsi:type="form:FormGroup">
-            <name>НеудачныеЗаменыГруппа</name>
+            <name>НеудачныеЗаменыГруппа1</name>
             <id>178</id>
             <items xsi:type="form:FormField">
               <name>НеудачныеЗаменыПиктограмма</name>
@@ -1854,10 +1786,10 @@
             </userVisible>
             <title>
               <key>ru</key>
-              <value>Неудачные замены группа</value>
+              <value>Неудачные замены группа 1</value>
             </title>
             <extendedTooltip>
-              <name>НеудачныеЗаменыГруппаРасширеннаяПодсказка</name>
+              <name>НеудачныеЗаменыГруппа1РасширеннаяПодсказка</name>
               <id>179</id>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
@@ -2841,6 +2773,20 @@
   <attributes>
     <name>СобытиеОповещенияОЗамене</name>
     <id>9</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ТекстОшибкиПараметров</name>
+    <id>10</id>
     <valueType>
       <types>String</types>
       <stringQualifiers/>
