@@ -156,7 +156,7 @@
 <summary><h2># Инструкция по запуску сценариев автоматизированного тестирования</h2></summary>
 
 1. Загрузите тестовую базу данных  
-   - Используйте выгрузку ([diplom](https://github.com/ZhannaDunaeva/fonecmid-diplom/releases))  
+   - Используйте выгрузку [diplom](https://github.com/ZhannaDunaeva/fonecmid-diplom/releases)  
    - Восстановите через Конфигуратор: Администрирование → Загрузить информационную базу  
 
 2. Подготовьте файлы тестирования  
